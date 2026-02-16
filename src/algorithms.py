@@ -1,9 +1,10 @@
+from functools import lru_cache
+
+@lru_cache(maxsize=None)
 def fibonacci_recursive(n):
     """
     Calcule la suite de Fibonacci de manière récursive.
-    C'est une méthode simple à écrire mais TRÈS lente pour les grands nombres
-    car elle recalcule sans cesse les mêmes valeurs.
-    Complexité : Exponentielle O(2^n)
+    MAINTENANT OPTIMISÉE AVEC UN CACHE !
     """
     if n <= 1:
         return n
