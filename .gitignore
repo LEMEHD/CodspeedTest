@@ -1,0 +1,12 @@
+# Python compilation et cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environnements virtuels
+venv/
+.env
+env/
+
+# Fichiers système
+.DS_Store
